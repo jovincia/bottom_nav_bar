@@ -4,6 +4,8 @@ import 'package:bottom_nav_bar/pages/user_message.dart';
 import 'package:bottom_nav_bar/pages/user_person.dart';
 import 'package:bottom_nav_bar/pages/user_settings.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:marquee/marquee.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({super.key});
@@ -31,7 +33,19 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        
+        backgroundColor: MainColors.brownNude,
+        title: SizedBox(
+          height: 40,
+          child: Marquee(
+            text: "Made by Dani ♥♥♥♥♥♥♥♥♥",
+            style: GoogleFonts.calligraffitti(
+              fontSize: 24,
+              color: MainColors.white,
+             
+            ),
+          
+          ),
+        ),
       ),
       body: pages[selectedPosition],
       bottomNavigationBar: BottomNavigationBar(
