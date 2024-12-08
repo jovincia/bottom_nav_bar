@@ -8,7 +8,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:marquee/marquee.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -23,10 +23,10 @@ class _HomePageState extends State<HomePage> {
   }
 
   final List<Widget> pages = [
-    UserHome(),
-    UserMessage(),
-    UserPerson(),
-    UserSettings()
+    const UserHome(),
+    const UserMessage(),
+    const UserPerson(),
+    const UserSettings()
   ];
 
   @override
